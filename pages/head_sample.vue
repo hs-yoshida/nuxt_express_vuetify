@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{ title }}</h1>
-    <p>{{ string }}</p>
+    <p>{{ paragraph }}</p>
     <nuxt/>
   </div>
 </template>
@@ -24,7 +24,7 @@ export default {
   },
   body () {
     return {
-      string: this.paragraph,
+      paragraph: this.paragraph,
     }
   }
 }
