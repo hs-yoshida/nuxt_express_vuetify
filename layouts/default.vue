@@ -100,7 +100,7 @@
           { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
           { icon: 'bubble_chart', title: 'Users', to: '/user' },
           { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' },
-          { icon: 'bubble_chart', title: 'Sore', to: '/store_sample' }
+          { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
         ],
         miniVariant: false,
         right: true,
