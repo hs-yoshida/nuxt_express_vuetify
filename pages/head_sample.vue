@@ -3,14 +3,14 @@
     <h1>{{ title }}</h1>
     <p>{{ paragraph }}</p>
     <img src="~/assets/image.png">
-    <div>
-      <v-img :src="require('~/assets/image.png')" />
-    </div>
+    <v-img :src="require('~/assets/image.png')" />
     <nuxt/>
   </div>
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   data () {
     return {
@@ -30,6 +30,10 @@ export default {
     return {
       paragraph: this.paragraph,
     }
+  },
+  async asyncData ({ params }) {
+    let { data } = await axios.get(`https://my-api/posts/${params.id}`)
+    return { title: data.title }
   }
 }
 </script>
