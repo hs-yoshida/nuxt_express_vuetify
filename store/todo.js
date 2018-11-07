@@ -1,51 +1,51 @@
 export const state = () => ({
-list: []
+  list: []
 })
 
 export const mutations = {
-add (state, text) {
+  add (state, text) {
     state.list.push({
-    text: text,
-    done: false
+      text: text,
+      done: false
     })
-},
-remove (state, { todo }) {
+  },
+  remove (state, { todo }) {
     state.list.splice(state.list.indexOf(todo), 1)
-},
-toggle (state, todo) {
+  },
+  toggle (state, todo) {
     todo.done = !todo.done
-}
+  }
 }
 
 new Vuex.Store({
-state: () => ({
+  state: () => ({
     counter: 0
-}),
-mutations: {
+  }),
+  mutations: {
     increment (state) {
-    state.counter++
+      state.counter++
     }
-},
-modules: {
+  },
+  modules: {
     namespaced: true,
     todos: {
-    state: () => ({
+      state: () => ({
         list: []
-    }),
-    mutations: {
+      }),
+      mutations: {
         add (state, { text }) {
-        state.list.push({
+          state.list.push({
             text,
             done: false
-        })
+          })
         },
         remove (state, { todo }) {
-        state.list.splice(state.list.indexOf(todo), 1)
+          state.list.splice(state.list.indexOf(todo), 1)
         },
         toggle (state, { todo }) {
-        todo.done = !todo.done
+          todo.done = !todo.done
         }
+      }
     }
-    }
-}
+  }
 })
