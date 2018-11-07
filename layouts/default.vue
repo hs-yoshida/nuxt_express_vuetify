@@ -98,7 +98,8 @@
           { icon: 'bubble_chart', title: 'Despire', to: '/despire' },
           { icon: 'bubble_chart', title: 'Posts', to: '/posts' },
           { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
-          { icon: 'bubble_chart', title: 'Users', to: '/user' }
+          { icon: 'bubble_chart', title: 'Users', to: '/user' },
+          { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' }
         ],
         miniVariant: false,
         right: true,
