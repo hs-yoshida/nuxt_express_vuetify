@@ -97,7 +97,8 @@
           { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
           { icon: 'bubble_chart', title: 'Despire', to: '/despire' },
           { icon: 'bubble_chart', title: 'Posts', to: '/posts' },
-          { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' }
+          { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
+          { icon: 'bubble_chart', title: 'Users', to: '/user' }
         ],
         miniVariant: false,
         right: true,
