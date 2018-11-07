@@ -3,6 +3,7 @@
     <h1>{{ title }}</h1>
     <p>{{ paragraph }}</p>
     <img src="~/assets/image.png">
+    <v-img :src="require('~/assets/image.png')" />
     <nuxt/>
   </div>
 </template>
