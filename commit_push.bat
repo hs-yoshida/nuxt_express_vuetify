@@ -1,4 +1,5 @@
 @echo off
+set time=
 set ctime=
 set date=%DATE%
 set time=%TIME%
