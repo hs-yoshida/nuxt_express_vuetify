@@ -2,6 +2,7 @@
   <div>
     <h1>{{ title }}</h1>
     <p>{{ paragraph }}</p>
+    <img src="~/assets/image.png">
     <nuxt/>
   </div>
 </template>
