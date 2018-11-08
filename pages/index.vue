@@ -1,5 +1,18 @@
 <template>
   <v-layout justify-center>
+      <v-parallax
+      dark
+      src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+    >
+      <v-layout
+        align-center
+        column
+        justify-center
+      >
+        <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
+        <h4 class="subheading">In nulla perferendis.</h4>
+      </v-layout>
+    </v-parallax>
     <v-flex xs12 sm6>
       <!-- <v-toolbar color="indigo" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
@@ -10,19 +23,7 @@
         </v-btn>
       </v-toolbar> -->
 
-      <v-parallax
-        dark
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      >
-        <v-layout
-          align-center
-          column
-          justify-center
-        >
-          <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
-          <h4 class="subheading">In nulla perferendis.</h4>
-        </v-layout>
-      </v-parallax>
+
       <v-card>
         <v-container
           fluid
