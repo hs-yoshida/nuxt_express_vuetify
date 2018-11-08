@@ -57,15 +57,19 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-container>
-        <v-carousel>
-          <v-carousel-item
-            v-for="(pict,i) in picts"
-            :key="i"
-            :src="pict.src"
-          />
-        </v-carousel>
-      </v-container>
+      <v-parallax
+        dark
+        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+      >
+        <v-layout
+          align-center
+          column
+          justify-center
+        >
+          <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>
+          <h4 class="subheading">Build your application today!</h4>
+        </v-layout>
+      </v-parallax>
       <v-container>
         <nuxt />
       </v-container>
@@ -111,20 +115,6 @@ export default {
         { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' },
         { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
         // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
-      ],
-      picts: [
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-        },
-        {
-          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-        }
       ],
       miniVariant: false,
       right: true,
