@@ -14,13 +14,3 @@ const createStore = () => {
 }
 
 export default createStore
-
-// export const state = () => ({
-//   counter: 0
-// })
-
-// export const mutations = {
-//   increment (state) {
-//     state.counter++
-//   }
-// }
