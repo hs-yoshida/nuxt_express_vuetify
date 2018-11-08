@@ -24,7 +24,7 @@
         </v-layout>
       </v-parallax>
 
-      <v-card>
+
         <v-container
           fluid
           grid-list-md
@@ -69,7 +69,7 @@
             </v-flex>
           </v-layout>
         </v-container>
-      </v-card>
+
     </v-flex>
   </v-layout>
 
