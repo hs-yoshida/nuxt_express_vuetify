@@ -60,7 +60,7 @@
       <v-carousel-item
         v-for="(item,i) in picts"
         :key="i"
-        :src="item.src"
+        :src="picts.src"
       ></v-carousel-item>
     </v-carousel>
     <v-content>
