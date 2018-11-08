@@ -126,6 +126,14 @@ export default {
         { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
         // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
       ],
+      links: [
+        'Home',
+        'About Us',
+        'Team',
+        'Services',
+        'Blog',
+        'Contact Us'
+      ],
       miniVariant: false,
       right: true,
       rightDrawer: false,
