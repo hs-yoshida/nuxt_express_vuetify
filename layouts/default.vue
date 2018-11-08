@@ -58,7 +58,7 @@
     </v-toolbar>
     <v-carousel>
       <v-carousel-item
-        v-for="(item,i) in items"
+        v-for="(pict,i) in picts"
         :key="i"
         :src="item.src"
       ></v-carousel-item>
@@ -122,7 +122,7 @@
   export default {
     data () {
       return {
-        items: [
+        picts: [
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
           },
