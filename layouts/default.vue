@@ -56,18 +56,20 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
+    <v-container>
+      <v-carousel>
+        <v-carousel-item
+          v-for="(pict,i) in picts"
+          :key="i"
+          :src="pict.src"
+        />
+      </v-carousel>
+    </v-container>
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-carousel>
-      <v-carousel-item
-        v-for="(pict,i) in picts"
-        :key="i"
-        :src="pict.src"
-      ></v-carousel-item>
-    </v-carousel>
     <v-navigation-drawer
       :right="right"
       v-model="rightDrawer"
@@ -93,42 +95,42 @@
 </template>
 
 <script>
-  export default {
-    data() {
-      return {
-        clipped: false,
-        drawer: true,
-        fixed: false,
-        items: [
-          { icon: 'apps', title: 'Welcome', to: '/' },
-          { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-          { icon: 'bubble_chart', title: 'Despire', to: '/despire' },
-          { icon: 'bubble_chart', title: 'Posts', to: '/posts' },
-          { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
-          { icon: 'bubble_chart', title: 'Users', to: '/user' },
-          { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' },
-          { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
-          // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
-        ],
-        picts: [
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
-          },
-          {
-            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
-          }
-        ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
-      }
+export default {
+  data() {
+    return {
+      clipped: false,
+      drawer: true,
+      fixed: false,
+      items: [
+        { icon: 'apps', title: 'Welcome', to: '/' },
+        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
+        { icon: 'bubble_chart', title: 'Despire', to: '/despire' },
+        { icon: 'bubble_chart', title: 'Posts', to: '/posts' },
+        { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
+        { icon: 'bubble_chart', title: 'Users', to: '/user' },
+        { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' },
+        { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
+        // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
+      ],
+      picts: [
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg'
+        },
+        {
+          src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
+        }
+      ],
+      miniVariant: false,
+      right: true,
+      rightDrawer: false,
+      title: 'Vuetify.js'
     }
   }
+}
 </script>

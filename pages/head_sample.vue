@@ -10,23 +10,27 @@
 
 <script>
 export default {
-  data () {
+  data() {
     return {
       title: 'Hello World!',
       paragraph: 'Hi there!'
     }
   },
-  head () {
+  head() {
     return {
       title: this.title,
       meta: [
-        { hid: 'description', name: 'description', content: 'My custom description' }
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My custom description'
+        }
       ]
     }
   },
-  body () {
+  body() {
     return {
-      paragraph: this.paragraph,
+      paragraph: this.paragraph
     }
   }
 }

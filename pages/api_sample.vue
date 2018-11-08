@@ -6,7 +6,7 @@
 import axios from 'axios'
 
 export default {
-  async asyncData ({ params }) {
+  async asyncData({ params }) {
     let { data } = await axios.get(`https://my-api/posts/${params.id}`)
     return { title: data.title }
   }
