@@ -67,13 +67,43 @@
     >
       <span>&copy; 2018 humour semantics</span>
     </v-footer> -->
-    <v-footer
+    <!-- <v-footer
       class="pa-3"
       :fixed="fixed"
       app
     >
       <v-spacer></v-spacer>
       <div>&copy; {{ new Date().getFullYear() }} humour semantics</div>
+    </v-footer> -->
+    <v-footer
+      height="auto"
+      color="primary lighten-1"
+    >
+      <v-layout
+        justify-center
+        row
+        wrap
+      >
+        <v-btn
+          v-for="link in links"
+          :key="link"
+          color="white"
+          flat
+          round
+        >
+          {{ link }}
+        </v-btn>
+        <v-flex
+          primary
+          lighten-2
+          py-3
+          text-xs-center
+          white--text
+          xs12
+        >
+          &copy;2018 — <strong>humour semantics</strong>
+        </v-flex>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>
