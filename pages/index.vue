@@ -1,6 +1,4 @@
 <template>
-  <v-layout justify-center>
-    <v-flex xs12 sm6>
       <v-toolbar color="indigo" dark>
         <v-toolbar-side-icon></v-toolbar-side-icon>
         <v-toolbar-title>Discover</v-toolbar-title>
@@ -9,22 +7,23 @@
           <v-icon>search</v-icon>
         </v-btn>
       </v-toolbar>
+  <v-parallax
+    dark
+    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+  >
+    <v-layout
+      align-center
+      column
+      justify-center
+    >
+      <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
+      <h4 class="subheading">In nulla perferendis.</h4>
+    </v-layout>
+  </v-parallax>
 
-      <v-parallax
-        dark
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      >
-        <v-layout
-          align-center
-          column
-          justify-center
-        >
-          <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
-          <h4 class="subheading">In nulla perferendis.</h4>
-        </v-layout>
-      </v-parallax>
 
-
+    <v-flex xs12 sm6>
+      <v-card>
         <v-container
           fluid
           grid-list-md
@@ -69,20 +68,9 @@
             </v-flex>
           </v-layout>
         </v-container>
-
+      </v-card>
     </v-flex>
-  </v-layout>
+
 
 </template>
 
-<script>
-  export default {
-    data: () => ({
-      cards: [
-        { title: 'Pre-fab homes', src: 'https://cdn.vuetifyjs.com/images/cards/house.jpg', flex: 12 },
-        { title: 'Favorite road trips', src: 'https://cdn.vuetifyjs.com/images/cards/road.jpg', flex: 6 },
-        { title: 'Best airlines', src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg', flex: 6 }
-      ]
-    })
-  }
-</script>
