@@ -58,7 +58,7 @@
     </v-toolbar>
     <v-carousel>
       <v-carousel-item
-        v-for="(pict,i) in picts"
+        v-for="(item,i) in picts"
         :key="i"
         :src="item.src"
       ></v-carousel-item>
