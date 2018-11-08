@@ -57,43 +57,23 @@
       </v-btn>
     </v-toolbar>
     <v-content>
-      <v-parallax
-        dark
-        src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
-      >
-        <v-layout
-          align-center
-          column
-          justify-center
-        >
-          <h1 class="display-2 font-weight-thin mb-3">Vuetify.js</h1>
-          <h4 class="subheading">Build your application today!</h4>
-        </v-layout>
-      </v-parallax>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <v-navigation-drawer
-      :right="right"
-      v-model="rightDrawer"
-      temporary
-      fixed
-    >
-      <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
-            <v-icon light>compare_arrows</v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>
-    <v-footer
+    <!-- <v-footer
       :fixed="fixed"
       app
     >
-      <span>&copy; 2017</span>
+      <span>&copy; 2018 humour semantics</span>
+    </v-footer> -->
+    <v-footer
+      class="pa-3"
+      :fixed="fixed"
+      app
+    >
+      <v-spacer></v-spacer>
+      <div>&copy; {{ new Date().getFullYear() }} humour semantics</div>
     </v-footer>
   </v-app>
 </template>
