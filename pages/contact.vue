@@ -33,9 +33,9 @@
               </v-card-actions>
             </v-card>
           </v-container>
+        </v-flex>
 
-
-
+        <v-flex xs12 sm6>
           <v-container>
             <v-card>
               <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
@@ -59,10 +59,10 @@
                 <v-btn flat color="orange">Explore</v-btn>
               </v-card-actions>
             </v-card>
-          </v-container>
+          <v-container>
+        </v-flex>
 
-
-
+        <v-flex xs12 sm6>
           <v-container>
             <v-card>
               <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">

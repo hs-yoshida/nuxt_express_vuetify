@@ -117,14 +117,10 @@ export default {
       fixed: false,
       items: [
         { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-        { icon: 'bubble_chart', title: 'Despire', to: '/despire' },
+        { icon: 'bubble_chart', title: 'Products', to: '/products' },
+        { icon: 'bubble_chart', title: 'Sample', to: '/sample' },
         { icon: 'bubble_chart', title: 'Posts', to: '/posts' },
-        { icon: 'bubble_chart', title: 'Head Sample', to: '/head_sample' },
-        { icon: 'bubble_chart', title: 'Users', to: '/user' },
-        { icon: 'bubble_chart', title: 'API Sample', to: '/api_sample' },
-        { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
-        // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
+        { icon: 'bubble_chart', title: 'Contact', to: '/contact' }
       ],
       links: [
         'Home',
@@ -137,7 +133,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: 'Market place' //'Vuetify.js'
     }
   }
 }
