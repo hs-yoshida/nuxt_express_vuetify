@@ -63,9 +63,9 @@
     </v-content>
     <v-carousel>
       <v-carousel-item
-        v-for="(item,i) in items"
+        v-for="(pict,i) in picts"
         :key="i"
-        :src="item.src"
+        :src="pict.src"
       ></v-carousel-item>
     </v-carousel>
     <v-navigation-drawer
@@ -110,19 +110,7 @@
           { icon: 'bubble_chart', title: 'Store', to: '/store_sample' }
           // { icon: 'bubble_chart', title: 'Todo', to: '/todo' }
         ],
-        miniVariant: false,
-        right: true,
-        rightDrawer: false,
-        title: 'Vuetify.js'
-      }
-    }
-  }
-</script>
-<script>
-  export default {
-    data () {
-      return {
-        items: [
+        picts: [
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg'
           },
@@ -135,7 +123,11 @@
           {
             src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg'
           }
-        ]
+        ],
+        miniVariant: false,
+        right: true,
+        rightDrawer: false,
+        title: 'Vuetify.js'
       }
     }
   }
