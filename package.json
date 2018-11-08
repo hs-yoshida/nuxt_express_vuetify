@@ -13,12 +13,22 @@
     "precommit": "npm run lint",
     "test": "ava"
   },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
   "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
     "cross-env": "^5.2.0",
-    "nuxt": "^2.0.0",
     "express": "^4.16.3",
-    "vuetify": "^1.2.4",
-    "@nuxtjs/axios": "^5.0.0"
+    "nuxt": "^2.2.0",
+    "vuetify": "^1.2.4"
   },
   "devDependencies": {
     "ava": "^0.25.0",
