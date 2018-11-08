@@ -56,6 +56,11 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
+    <v-content>
+      <v-container>
+        <nuxt />
+      </v-container>
+    </v-content>
     <v-carousel>
       <v-carousel-item
         v-for="(item,i) in items"
@@ -63,11 +68,6 @@
         :src="item.src"
       ></v-carousel-item>
     </v-carousel>
-    <v-content>
-      <v-container>
-        <nuxt />
-      </v-container>
-    </v-content>
     <v-navigation-drawer
       :right="right"
       v-model="rightDrawer"
