@@ -56,16 +56,16 @@
         <v-icon>menu</v-icon>
       </v-btn>
     </v-toolbar>
-    <v-container>
-      <v-carousel>
-        <v-carousel-item
-          v-for="(pict,i) in picts"
-          :key="i"
-          :src="pict.src"
-        />
-      </v-carousel>
-    </v-container>
     <v-content>
+      <v-container>
+        <v-carousel>
+          <v-carousel-item
+            v-for="(pict,i) in picts"
+            :key="i"
+            :src="pict.src"
+          />
+        </v-carousel>
+      </v-container>
       <v-container>
         <nuxt />
       </v-container>
