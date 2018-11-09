@@ -6,10 +6,11 @@
         <h4 class="subheading">In nulla perferendis.</h4>
       </v-layout>
     </v-parallax>
+          <p class="text-xs-center pa2 ma4">Center align on all viewport sizes</p>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
-
+          <v-container>
             <v-card>
               <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
                 <v-container fill-height fluid>
@@ -32,11 +33,10 @@
                 <v-btn flat color="orange">Explore</v-btn>
               </v-card-actions>
             </v-card>
+          </v-container>
         </v-flex>
-      </v-layout>
-
-      <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
+          <v-container>
             <v-card>
               <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
                 <v-container fill-height fluid>
@@ -59,11 +59,10 @@
                 <v-btn flat color="orange">Explore</v-btn>
               </v-card-actions>
             </v-card>
+          </v-container>
         </v-flex>
-      </v-layout>
-
-      <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
+          <v-container>
             <v-card>
               <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
                 <v-container fill-height fluid>
@@ -86,7 +85,7 @@
                 <v-btn flat color="orange">Explore</v-btn>
               </v-card-actions>
             </v-card>
-
+          </v-container>
         </v-flex>
       </v-layout>
     </v-container>
@@ -112,7 +111,8 @@
           src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
           flex: 6
         }
-      ]
+      ],
+      leadsentense: 'Eos iusto qui inventore et sit eum laborum ipsa.'
     })
   }
 
