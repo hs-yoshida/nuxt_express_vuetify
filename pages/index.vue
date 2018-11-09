@@ -1,16 +1,15 @@
 <template>
   <v-app>
-    <v-parallax dark height="1200" src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+    <v-parallax dark height="600" mt-4 src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
       <v-layout align-center column justify-center>
         <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
         <h4 class="headline">In nulla perferendis.</h4>
       </v-layout>
     </v-parallax>
+    <v-container fluid grid-list-md>
     <div class="text-xs-center pa-4 ma-4 subheading">
       {{ leadsentense }}
     </div>
-    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
-    <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
           <v-container>
@@ -92,6 +91,7 @@
         </v-flex>
       </v-layout>
     </v-container>
+    <v-parallax height="300" src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
   </v-app>
 </template>
 
