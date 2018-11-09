@@ -1,12 +1,15 @@
 <template>
   <v-app>
-    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
+    <v-parallax dark height="1200" src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
       <v-layout align-center column justify-center>
         <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
-        <h4 class="subheading">In nulla perferendis.</h4>
+        <h4 class="headline">In nulla perferendis.</h4>
       </v-layout>
     </v-parallax>
-          <p class="text-xs-center pa2 ma4">Center align on all viewport sizes</p>
+    <div class="text-xs-center pa-4 ma-4 subheading">
+      {{ leadsentense }}
+    </div>
+    <v-parallax src="https://cdn.vuetifyjs.com/images/parallax/material.jpg"></v-parallax>
     <v-container fluid grid-list-md>
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
@@ -111,8 +114,7 @@
           src: 'https://cdn.vuetifyjs.com/images/cards/plane.jpg',
           flex: 6
         }
-      ],
-      leadsentense: 'Eos iusto qui inventore et sit eum laborum ipsa.'
+      ]
     })
   }
 
@@ -122,6 +124,16 @@
     data() {
       return {
         card_text: 'Lorem ipsum dolor sit amet, brute iriure accusata ne mea. Eos suavitate referrentur ad, te duo agam libris qualisque, utroque quaestio accommodare no qui. Et percipit laboramus usu, no invidunt verterem nominati mel. Dolorem ancillae an mei, ut putant invenire splendide mel, ea nec propriae adipisci. Ignota salutandi accusamus in sed, et per malis fuisset, qui id ludus appareat.'
+      }
+    }
+  }
+
+</script>
+<script>
+  export default {
+    data() {
+      return {
+        leadsentense: 'Eos iusto qui inventore et sit eum laborum ipsa. Adipisci blanditiis doloremque. Natus molestias illum rerum rerum ut eum. Excepturi aperiam laborum consequatur totam odit dolorum. Minima consequatur deserunt consectetur et distinctio tempora. Quo error incidunt asperiores adipisci dignissimos quam. Molestias quasi incidunt vel vel ab.'
       }
     }
   }
