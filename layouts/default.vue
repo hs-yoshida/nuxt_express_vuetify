@@ -55,27 +55,21 @@
       <div>&copy; {{ new Date().getFullYear() }} humour semantics</div>
     </v-footer> -->
     <v-footer height="auto" color="primary lighten-1">
-      <v-container justify-center fill-height fluid>
-        <v-layout row wrap>
+      <v-layout row wrap>
+        <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
           <v-btn v-for="link in links" :key="link" color="white" flat round>
             {{ link }}
           </v-btn>
-        </v-layout>
-      </v-container>
-      <v-container justify-center fill-height fluid>
-        <v-layout row wrap>
+        </v-flex>
+        <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
           <v-btn v-for="icon in icons" :key="icon" class="mx-3 white--text" icon>
             <v-icon size="24px">{{ icon }}</v-icon>
           </v-btn>
-        </v-layout>
-      </v-container>
-      <v-container justify-center fill-height fluid>
-        <v-layout row wrap>
-          <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
-            &copy;2018 — <strong>humour semantics</strong>
-          </v-flex>
-        </v-layout>
-      </v-container>
+        </v-flex>
+        <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>
+          &copy;2018 — <strong>humour semantics</strong>
+        </v-flex>
+      </v-layout>
     </v-footer>
   </v-app>
 </template>

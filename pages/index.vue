@@ -3,7 +3,7 @@
     <div class="fluid grid-list-md">
       <v-parallax dark height="600" mt-4 src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
         <v-layout align-center column justify-center>
-          <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
+          <h1 class="display-2 font-weight-thin mb-3 mx-4">humour semantics</h1>
           <h4 class="headline">In nulla perferendis.</h4>
         </v-layout>
       </v-parallax>
@@ -60,7 +60,7 @@
         </div>
       </div>
     </v-parallax>
-    <div class="fluid grid-list-md pa-4 ma-4">
+    <div class="fluid grid-list-md pa-4 my-4">
       <v-layout row wrap>
         <v-flex d-flex xs12 sm6 md4>
           <v-container>
@@ -187,7 +187,7 @@
         firstparagraph: 'Esse eos ut perferendis itaque adipisci velit quis non. Laboriosam quo mollitia aliquam minima tenetur dolorem. Et modi omnis. Repudiandae at repellat vel eligendi minus. Iusto deleniti et consequuntur debitis. Quae corrupti ipsa modi. Inventore laborum unde nulla beatae nesciunt aut neque. Sed omnis assumenda et officia qui nihil. Velit repellat qui a eos. Illo quia autem repellat et maxime qui numquam. Recusandae consequuntur asperiores dignissimos repudiandae. Pariatur corrupti commodi aut officia ea temporibus. Est voluptate non soluta nam id voluptatem.',
         secondparagraph: 'Deserunt ratione maxime. Dicta aut nemo earum. Iure aperiam magni ut sint ut blanditiis qui corrupti. Harum excepturi sint est voluptates officiis rerum sit odio aut. Quo deleniti veniam suscipit. Ut asperiores voluptatibus veritatis eaque earum et sed illo. A eligendi itaque adipisci quisquam. Impedit vitae fugit et eveniet. Laborum corrupti voluptatem sint tempora ducimus recusandae eum neque. Omnis molestiae cupiditate et. Maiores sit sed similique sapiente voluptas perspiciatis totam consequatur. Necessitatibus aut quisquam quidem labore est saepe. Odio fuga repudiandae dicta excepturi sint ut rerum. Dolores distinctio alias quidem voluptatem impedit quisquam sit earum repellendus. Fuga officia dolor tempora nemo atque.',
         thirdparagraph: 'Quo ut ut quo quia voluptatem aut doloribus vel. Repellat dolores et at. Consequatur sint quia consequuntur tempore dicta sequi. Quidem aut modi enim nobis architecto. Earum qui quo autem ab eveniet. Similique cum deleniti ipsum voluptate ut sunt illum. Explicabo deleniti itaque molestiae reprehenderit rem quis. Quia temporibus illo optio magnam minus rerum dolores. Voluptate iusto harum sequi illum quidem explicabo veniam sequi. Aspernatur quia sapiente enim nostrum. Ratione numquam natus quia aliquam dolorum ipsa nulla sint.',
-        additionalparagraph: 'Et ut autem autem nihil earum sapiente saepe sint. Eos quis aliquid. Ut aspernatur error labore laboriosam nisi odit rerum voluptatum qui. Debitis et saepe et omnis. Laborum inventore unde voluptas voluptatem vero. Sint qui et quia adipisci libero. Aut dolor et. Unde quo temporibus voluptas. Dolor earum fugiat. Velit id possimus voluptatem et dignissimos vel ratione aperiam ut. Et sapiente modi voluptatem excepturi perspiciatis illum corporis dolorem sed. Occaecati sit dolores. Velit consequatur pariatur. Quam voluptas non quos quo. Voluptate delectus laboriosam expedita. Qui veritatis deleniti accusantium voluptas adipisci deserunt aut. Quia ipsa harum. Laborum dolorem voluptatem vero quidem eum consectetur praesentium. Minima quo recusandae maxime eaque dolor porro qui animi. Id quam alias et dolor facere asperiores. Sit incidunt qui dicta itaque et excepturi. Odit magni ab harum aut dolorem ut temporibus autem id. Nihil ullam ratione dolor dolores sit et velit. Adipisci nam debitis dignissimos nihil. Omnis vel magni. Sint cumque nesciunt doloremque quod in. Ut sed consequatur eaque voluptas aut qui. Ipsa accusantium nobis repellat ut. Voluptates fuga rerum nam beatae deserunt ea sed ut.'
+        additionalparagraph: 'Et ut autem autem nihil earum sapiente saepe sint. Eos quis aliquid. Ut aspernatur error labore laboriosam nisi odit rerum voluptatum qui. Debitis et saepe et omnis. Laborum inventore unde voluptas voluptatem vero. Sint qui et quia adipisci libero. Aut dolor et. Unde quo temporibus voluptas. Dolor earum fugiat. Velit id possimus voluptatem et dignissimos vel ratione aperiam ut. Et sapiente modi voluptatem excepturi perspiciatis illum corporis dolorem sed. Occaecati sit dolores. Velit consequatur pariatur. Quam voluptas non quos quo.'
       }
     }
   }
