@@ -134,7 +134,7 @@
                 </div>
               </v-card-title>
               <v-card-actions>
-                <v-btn flat color="orange" href="http://hoge.com">Share</v-btn>
+                <v-btn flat color="orange" href="https://www.science.co.jp/?utm_source=Netlify-CMS&utm_medium=social-media&utm_campaign=deploy_contents">Share</v-btn>
                 <v-btn flat color="orange">Explore</v-btn>
               </v-card-actions>
             </v-card>
