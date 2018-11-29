@@ -13,7 +13,7 @@
               <v-text-field
                 v-model="name"
                 :rules="nameRules"
-                :counter="50"
+                :counter="25"
                 label="Name"
                 required
               ></v-text-field>
