@@ -17,43 +17,11 @@
       <v-btn icon @click.stop="miniVariant = !miniVariant">
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
-      <!-- <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn> -->
-      <!-- <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn> -->
       <v-toolbar-title v-text="title" />
-      <!-- <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn> -->
     </v-toolbar>
     <v-content>
       <nuxt />
     </v-content>
-    <!-- <v-footer
-      :fixed="fixed"
-      app
-    >
-      <span>&copy; 2018 humour semantics</span>
-    </v-footer> -->
-    <!-- <v-footer
-      class="pa-3"
-      :fixed="fixed"
-      app
-    >
-      <v-spacer></v-spacer>
-      <div>&copy; {{ new Date().getFullYear() }} humour semantics</div>
-    </v-footer> -->
     <v-footer height="auto" color="primary lighten-1">
       <v-layout row wrap>
         <v-flex primary lighten-2 py-3 text-xs-center white--text xs12>

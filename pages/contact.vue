@@ -1,91 +1,29 @@
 <template>
   <v-app>
-    <v-parallax dark src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg">
-      <v-layout align-center column justify-center>
-        <h1 class="display-2 font-weight-thin mb-3">humour semantics</h1>
-        <h4 class="subheading">In nulla perferendis.</h4>
-      </v-layout>
-    </v-parallax>
     <v-container>
+
       <v-layout>
         <v-flex xs12 sm6>
           <v-container>
-            <v-card>
-              <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
-                <v-container fill-height fluid>
-                  <v-layout fill-height>
-                    <v-flex xs12 align-end flexbox>
-                      <span class="headline">Top 10 Australian beaches</span>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-img>
-              <v-card-title>
-                <div>
-                  <span class="grey--text">Number 10</span><br>
-                  <span>Whitehaven Beach</span><br>
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat color="orange">Share</v-btn>
-                <v-btn flat color="orange">Explore</v-btn>
-              </v-card-actions>
-            </v-card>
-          </v-container>
-        </v-flex>
-
-        <v-flex xs12 sm6>
-          <v-container>
-            <v-card>
-              <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
-                <v-container fill-height fluid>
-                  <v-layout fill-height>
-                    <v-flex xs12 align-end flexbox>
-                      <span class="headline">Top 10 Australian beaches</span>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-img>
-              <v-card-title>
-                <div>
-                  <span class="grey--text">Number 10</span><br>
-                  <span>Whitehaven Beach</span><br>
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat color="orange">Share</v-btn>
-                <v-btn flat color="orange">Explore</v-btn>
-              </v-card-actions>
-            </v-card>
-          <v-container>
-        </v-flex>
-
-        <v-flex xs12 sm6>
-          <v-container>
-            <v-card>
-              <v-img class="white--text" height="200px" src="https://cdn.vuetifyjs.com/images/cards/docks.jpg">
-                <v-container fill-height fluid>
-                  <v-layout fill-height>
-                    <v-flex xs12 align-end flexbox>
-                      <span class="headline">Top 10 Australian beaches</span>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-img>
-              <v-card-title>
-                <div>
-                  <span class="grey--text">Number 10</span><br>
-                  <span>Whitehaven Beach</span><br>
-                  <span>Whitsunday Island, Whitsunday Islands</span>
-                </div>
-              </v-card-title>
-              <v-card-actions>
-                <v-btn flat color="orange">Share</v-btn>
-                <v-btn flat color="orange">Explore</v-btn>
-              </v-card-actions>
-            </v-card>
+            <v-layout align-center column justify-center class="mx-2 my-5">
+              <h1 class="display-2 font-weight-thin pa-2">humour semantics</h1>
+              <h4 class="subheading">Sint velit nulla rerum nobis. Id in aspernatur alias voluptas sint. Accusamus rerum et facilis autem qui. Sint temporibus voluptas ut ullam molestias tempore. Et nihil consequuntur eos molestias maiores.</h4>
+            </v-layout>
+            <v-form v-model="valid">
+              <v-text-field
+                v-model="name"
+                :rules="nameRules"
+                :counter="50"
+                label="Name"
+                required
+              ></v-text-field>
+              <v-text-field
+                v-model="email"
+                :rules="emailRules"
+                label="E-mail"
+                required
+              ></v-text-field>
+            </v-form>
           </v-container>
         </v-flex>
 
