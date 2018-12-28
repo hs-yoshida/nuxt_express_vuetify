@@ -18,20 +18,55 @@
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
       <v-toolbar-title v-text="title" />
-        <div id="srchBox">
-          <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch" target="yjserp">
-            <p id="srchForm">
-              <input type="search" results="5" name="p" id="srchInput"><input type="submit" value="検索" id="srchBtn">
-              <input type="hidden" id="fr" name="fr" value="cse">
-              <input type="hidden" id="ei" name="ei" value="UTF-8">
-              <input type="hidden" id="csid" name="csid" value="D1vYJrFsLqLq5a3tSNImpwpegFJeV5jIK5i890NZqI2nmXE-">
-            </p>
-            <input type="hidden" name="vs" value="nuxtexpressvuetify.netlify.com" id="yjInsite">
-          </form>
-          <p id="srchLogo"><a href="https://www.yahoo.co.jp">powered by Yahoo! JAPAN</a></p>
-          <img src="https://custom.search.yahoo.co.jp/images/window/D1vYJrFsLqLq5a3tSNImpwpegFJeV5jIK5i890NZqI2nmXE-.gif">
-        </div>
-        <!-- /#srchBox -->
+      <div id="srchBox">
+        <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch">
+          <p id="srchForm">
+            <input type="search" results="5" name="p" id="srchInput"><input type="submit" value="検索" id="srchBtn"
+              onclick="document.getElementById('srchInput').focus();">
+            <input type="hidden" id="fr" name="fr" value="cse">
+            <input type="hidden" id="ei" name="ei" value="UTF-8">
+            <input type="hidden" id="csid" name="csid" value="bfWokm5sLqLn_HgPdQKvRqtcbvgWvyOpWlDzbJX_Gxn1Hnk-">
+          </p>
+          <ul id="srchToggle">
+            <li id="srchInsite">
+              <label for="yjInsite">
+                <input type="radio" name="vs" value="nuxtexpressvuetify.netlify.com" id="yjInsite" checked="checked">
+                サイト内検索</label>
+            </li>
+            <li id="srchWeb">
+              <label for="yjWeb">
+                <input type="radio" name="vs" value="" id="yjWeb">
+                ウェブ検索</label>
+            </li>
+          </ul>
+        </form>
+        <img src="https://custom.search.yahoo.co.jp/images/window/bfWokm5sLqLn_HgPdQKvRqtcbvgWvyOpWlDzbJX_Gxn1Hnk-.gif">
+      </div>
+      <script type="text/javascript">
+        (function () {
+          var sb = document.getElementById('srchBox');
+          if (sb && sb.className == 'watermark') {
+            var si = document.getElementById('srchInput');
+            var f = function () {
+              si.className = 'nomark';
+            };
+            var b = function () {
+              if (si.value == '') {
+                si.className = '';
+              }
+            };
+            si.onfocus = f;
+            si.onblur = b;
+            if (!/[&?]p=[^&]/.test(location.search)) {
+              b();
+            } else {
+              f();
+            }
+          }
+        })();
+
+      </script>
+      <!-- /#srchBox -->
     </v-toolbar>
     <v-content>
       <nuxt />
