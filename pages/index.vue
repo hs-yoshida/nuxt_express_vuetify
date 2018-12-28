@@ -40,7 +40,7 @@
       </v-layout>
     </div>
     <div class="fluid grid-list-md">
-      <v-layout row wrap>
+      <v-layout row wrap grey darken-3>
         <v-flex d-flex xs12 sm6 md4>
           <div class="text-xs-left pa-4 ma-4 subheading">
             <v-img :src="require('~/assets/image.png')" />
