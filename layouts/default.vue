@@ -18,6 +18,12 @@
         <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
       </v-btn>
       <v-toolbar-title v-text="title" />
+
+<!-- Begin Yahoo Search Form -->
+<div style="margin:0;padding:0;font-size:14pt;border:none;background-color:#FFF;"><form action="https://search.yahoo.co.jp/search" method="get" target="_blank" style="margin:0;padding:0;"><p style="margin:0;padding:0;"><a href="https://www.yahoo.co.jp/" target="_blank"><img src="https://s.yimg.jp/images/search/guide/searchbox/080318/ysearch_logo_85_22.gif" alt="Yahoo! JAPAN" style="border:none;vertical-align:middle;padding:0;border:0;" width="85" height="22"></a><input type="text" name="p" size="28" style="margin:0 3px;width:50%;"><input type="hidden" name="fr" value="ysiw"><input type="hidden" name="ei" value="▲▲▲"><input type="submit" value="検索" style="margin:0;"></p><ul style="margin:2px 0 0 0;padding:0;font-size:10pt;list-style:none;"><li style="display:inline;"><input name="vs" type="radio" value="●●●" checked="checked">このサイト内を検索</li><li style="display:inline;"><input name="vs" type="radio" value="">ウェブ全体を検索</li></ul></form><img src="https://custom.search.yahoo.co.jp/images/window/006c75a92ba244c6b4cbe2709aa17d7b.gif" width="1" height="1" style="display:block;position:absolute"></div>
+<!-- End Yahoo! Search Form-->
+
+      <!-- #srchBox -->
       <div id="srchBox">
         <form action="https://custom.search.yahoo.co.jp/search" method="get" id="srch">
           <p id="srchForm">
