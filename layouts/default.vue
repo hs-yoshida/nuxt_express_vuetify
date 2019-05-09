@@ -65,7 +65,7 @@
         drawer: true,
         fixed: false,
         items: [{
-            icon: 'apps',
+            icon: 'handshake',
             title: 'Welcome',
             to: '/'
           },
@@ -80,12 +80,12 @@
             to: '/sample'
           },
           {
-            icon: 'bubble_chart',
+            icon: 'newspaper',
             title: 'Posts',
             to: '/posts'
           },
           {
-            icon: 'bubble_chart',
+            icon: 'bullhorn',
             title: 'Contact',
             to: '/contact'
           }
